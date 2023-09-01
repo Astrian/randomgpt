@@ -1,6 +1,6 @@
 openapi: 3.0.1
 info:
-  title: Truly Random Generator
+  title: Random Generator
   description: Generate truly random numbers from atmospheric noise, supported by random.org (not official).
   version: 'v1'
 servers:

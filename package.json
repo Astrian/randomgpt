@@ -5,7 +5,7 @@
   "license": "MIT",
   "scripts": {
     "debug": "nodemon app.ts",
-    "start": "tsc --build && NODE_ENV=production pm2 start dist/app.js --name randomgpt && cp static dist/static -r",
+    "start": "tsc --build && NODE_ENV=production pm2 start dist/app.js --name randomgpt && cp static ./dist/ -r",
     "stop": "pm2 stop randomgpt && pm2 delete randomgpt",
     "clean": "rm -rf dist"
   },

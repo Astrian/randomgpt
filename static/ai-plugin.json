@@ -9,7 +9,7 @@
   },
   "api": {
       "type": "openapi",
-      "url": "http://localhost:3001/openapi.yaml"
+      "url": "https://random.astrian.moe/openapi.yaml"
   },
   "logo_url": "https://static.random.org/graphics/touch/app-touch-152x152.png",
   "contact_email": "green.joy2868@astrian.moe",

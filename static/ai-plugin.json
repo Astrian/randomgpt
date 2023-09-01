@@ -1,0 +1,17 @@
+{
+  "schema_version": "v1",
+  "name_for_human": "Truly Random Generator",
+  "name_for_model": "random",
+  "description_for_human": "Generate truly random numbers from atmospheric noise, supported by random.org (not official).",
+  "description_for_model": "Generate truly random numbers, strings, etc. from atmospheric noise.",
+  "auth": {
+      "type": "none"
+  },
+  "api": {
+      "type": "openapi",
+      "url": "http://localhost:3001/openapi.yaml"
+  },
+  "logo_url": "https://static.random.org/graphics/touch/app-touch-152x152.png",
+  "contact_email": "random@astrian.moe",
+  "legal_info_url": "https://random.astrian.moe"
+}

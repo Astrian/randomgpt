@@ -1,0 +1,25 @@
+{
+  "name": "randomgpt",
+  "version": "1.0.0",
+  "main": "app.js",
+  "license": "MIT",
+  "scripts": {
+    "debug": "nodemon app.ts"
+  },
+  "dependencies": {
+    "@koa/cors": "^4.0.0",
+    "@types/dotenv": "^8.2.0",
+    "@types/koa__cors": "^4.0.0",
+    "axios": "^1.5.0",
+    "dotenv": "^16.3.1",
+    "koa": "^2.14.2",
+    "koa-router": "^12.0.0",
+    "typescript": "^5.2.2"
+  },
+  "devDependencies": {
+    "@types/koa": "^2.13.8",
+    "@types/koa-router": "^7.4.4",
+    "nodemon": "^3.0.1",
+    "ts-node": "^10.9.1"
+  }
+}

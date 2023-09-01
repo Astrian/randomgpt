@@ -1,0 +1,61 @@
+openapi: 3.0.1
+info:
+  title: Truly Random Generator
+  description: Generate truly random numbers from atmospheric noise, supported by random.org (not official).
+  version: 'v1'
+servers:
+  - url: http://localhost:3001
+paths:
+  /integers:
+    get:
+      operationId: getRandomIntegers
+      summary: Get random integers
+      description: Get random integers
+      parameters:
+        - name: max
+          in: query
+          description: The maximum value allowed for each integer (inclusive).
+          required: false
+          schema:
+            type: integer
+
+            default: 99
+        - name: min
+          in: query
+          description: The minimum value allowed for each integer (inclusive).
+          required: false
+          schema:
+            type: integer
+            minimum: -1e9
+            maximum: 1e9
+            default: 0
+        - name: "n"
+          in: query
+          description: The number of integers requested, a.k.a. How many random integers you need.
+          required: false
+          schema:
+            type: integer
+            minimum: 1
+            maximum: 1e4
+            default: 1
+        - name: replacement
+          in: query
+          description: Specifies whether the random numbers should be picked with replacement.
+          required: false
+          schema:
+            type: boolean
+            default: true
+      responses:
+        '200':
+          description: OK
+
+components:
+  schemas:
+    randomIntRes:
+      type: object
+      properties:
+        data:
+          type: array
+          items:
+            type: integer
+            description: The random integers

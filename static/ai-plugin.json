@@ -1,6 +1,6 @@
 {
   "schema_version": "v1",
-  "name_for_human": "Truly Random Generator",
+  "name_for_human": "Random Generator",
   "name_for_model": "random",
   "description_for_human": "Generate truly random numbers from atmospheric noise, supported by random.org (not official).",
   "description_for_model": "Generate truly random numbers, strings, etc. from atmospheric noise.",

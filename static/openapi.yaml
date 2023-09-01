@@ -18,7 +18,6 @@ paths:
           required: false
           schema:
             type: integer
-
             default: 99
         - name: min
           in: query

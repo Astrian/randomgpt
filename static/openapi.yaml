@@ -4,7 +4,7 @@ info:
   description: Generate truly random numbers from atmospheric noise, supported by random.org (not official).
   version: 'v1'
 servers:
-  - url: http://localhost:3001
+  - url: https://random.astrian.moe
 paths:
   /integers:
     get:
